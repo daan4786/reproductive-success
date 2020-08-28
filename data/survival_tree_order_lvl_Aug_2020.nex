@@ -1,0 +1,45 @@
+#NEXUS
+[R-package APE, Fri Aug 28 13:33:03 2020]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 16;
+	TAXLABELS
+		gadiformes
+		scombriformes
+		perciformes
+		pleuronectiformes
+		clupeiformes
+		rodentia
+		lagomorpha
+		primate
+		artiodactyla
+		perissodactyla
+		carnivora
+		proboscidea
+		testudines
+		squamate
+		anura
+		caudata
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	gadiformes,
+		2	scombriformes,
+		3	perciformes,
+		4	pleuronectiformes,
+		5	clupeiformes,
+		6	rodentia,
+		7	lagomorpha,
+		8	primate,
+		9	artiodactyla,
+		10	perissodactyla,
+		11	carnivora,
+		12	proboscidea,
+		13	testudines,
+		14	squamate,
+		15	anura,
+		16	caudata
+	;
+	TREE * UNTITLED = [&R] (((1:0.2,(2:0.1333333333,(3:0.06666666667,4:0.06666666667)5:0.06666666667)4:0.06666666667)3:0.06666666667,5:0.2666666667)2:0.7333333333,((((((6:0.06666666667,7:0.06666666667)11:0.06666666667,8:0.1333333333)10:0.2,((9:0.06666666667,10:0.06666666667)13:0.06666666667,11:0.1333333333)12:0.2)9:0.06666666667,12:0.4)8:0.1333333333,(13:0.06666666667,14:0.06666666667)14:0.4666666667)7:0.1333333333,(15:0.06666666667,16:0.06666666667)15:0.6)6:0.3333333333)1;
+END;
