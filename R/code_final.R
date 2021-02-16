@@ -134,14 +134,14 @@ surv_pgls_order_lvl_data <-  surv%>% group_by(order)%>% summarize(animal = tolow
 
 ##Build phylogenies.
 #This is the code I used to construct the phylogenies from the open tree of life in August of 2020. The phylogenies used in analyses can be found in the data folder on github. Use read.nexus(~/survival_tree_all_species_Nov_2020_3.nex) to read in the tree.
-#tree_order<-read.nexus("~/Documents/survival_tree_all_species_Aug_2020 (1).nex")
+
 #resolved_names_order <- tnrs_match_names(unique(surv_pgls_order$Species))
 #tree_order <- tol_induced_subtree(ott_ids = resolved_names_order$ott_id)
 #tree_order <- compute.brlen(multi2di(tree_order))
 #write.nexus(tree_order, file = "survival_tree_all_species_Nov_2020_3.nex")
 
 #Note - I remade this tree in Nov 2020. When I first wrote the tree out in August 2020 (with write.nexus), I did it after mapping the tip labels to the phylo object. This makes it difficult to read-in the phylogeny with read.nexus. So, I remade the tree and wrote it out in a form that is easy to read back in. 
-tree_order <-read.nexus("~/Documents/research/completed/relative offspring size:survival/survival_tree_all_species_Nov_2020_3.nex")
+#tree_order <-read.nexus("~/Documents/research/completed/relative offspring size:survival/survival_tree_all_species_Nov_2020_3.nex")
 
 #Map the tip labels to the data frame
 taxon_map_order_ <- structure( unique(surv_pgls_order$animal), names =  unique(surv_pgls_order$Species))
